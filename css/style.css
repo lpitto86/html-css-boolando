@@ -20,13 +20,46 @@ footer a {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-col-1-3 {
+    width: calc(100% / 3);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    background-color: lightcoral;
+    border: 5px dashed aquamarine;
+    height: 200px;
+}
+
 header {
     background-color: darkorange;
+}
+
+header a {
+    font-weight: bold;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header img {
+    height: 35px;
 }
 
 .header-main-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
 }
 
 footer {
