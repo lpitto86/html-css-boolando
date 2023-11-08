@@ -21,8 +21,7 @@ a {
 
 .row {
     display: flex;
-    justify-content: space-around;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     margin: 10px 0;
 }
 
@@ -33,6 +32,13 @@ img {
 
 header {
     background-color: darkorange;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header > nav {
+    display: flex;
 }
 
 header a {
@@ -49,13 +55,37 @@ header img {
 
 .header-main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 15px 0;
+    width: 100%;
 }
 
 main {
-    padding: 50px 0;
+    /*padding: 50px 0;*/
+    height: calc(100vh - 140px);
+    height: 1000px;
+}
+
+.container {
+    height: 50%;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*.row {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow-y: auto;
+}*/
+
+.row .product-container {
+    margin: 5px;
+    width: 250px;
+    height: 150px;
+    position: relative;
 }
 
 .product-container h2 {
@@ -123,5 +153,37 @@ main {
 }
 
 footer {
+    /*padding: 1px;*/
+    height: 100%;
     background-color: #222;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+footer > nav {
+    display: flex;
+}
+
+.wishlist {
+    transform: 1s;
+}
+
+.wishlist:active {
+    color: red;
+}
+
+.primary-image {
+    transition: 1s;
+}
+
+.primary-image:hover {
+    transform: secondary-image;
 }
