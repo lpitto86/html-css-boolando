@@ -144,14 +144,20 @@ main {
     background-color: green;
 }
 
-.product-container .card-up .sencondary-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+.product-container .card-up .primary-image {
+    display: block;
 }
 
-.product-container .card-up .primary-image {
+.product-container .card-up .secondary-image {
     display: none;
+}
+
+.product-container .card-up:hover .primary-image {
+    display: none;
+}
+
+.product-container .card-up:hover .secondary-image {
+    display: block;
 }
 
 footer {
@@ -185,12 +191,4 @@ footer ul li {
 
 .wishlist:active {
     color: red;
-}
-
-.primary-image {
-    transition: 1s;
-}
-
-.primary-image:hover {
-    transform: secondary-image;
 }
