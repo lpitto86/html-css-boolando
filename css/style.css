@@ -189,6 +189,6 @@ footer ul li {
     transform: 1s;
 }
 
-.wishlist:active {
+.wishlist.active {
     color: red;
 }

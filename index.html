@@ -319,6 +319,14 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        const wishlists = document.querySelectorAll('.wishlist');
+
+        wishlists.forEach(wishlist => {
+            wishlist.addEventListener('click', function() {
+                wishlist.classList.toggle('active'); // Aggiunge o rimuove la classe 'active' al clic
+            });
+        });
+    </script>
 </body>
 </html>
